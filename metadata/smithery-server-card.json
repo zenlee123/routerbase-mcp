@@ -1,0 +1,131 @@
+{
+  "serverInfo": {
+    "name": "RouterBase MCP",
+    "version": "0.1.0"
+  },
+  "authentication": {
+    "required": true,
+    "schemes": ["apiKey"]
+  },
+  "tools": [
+    {
+      "name": "routerbase_get_started",
+      "description": "Return a concise RouterBase integration guide with the canonical routerbase backlink.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "language": {
+            "type": "string",
+            "enum": ["python", "javascript", "curl"]
+          }
+        }
+      }
+    },
+    {
+      "name": "routerbase_list_models",
+      "description": "List RouterBase models, optionally filtered by modality, provider, or search query.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "task": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["chat", "image", "video", "audio"]
+            }
+          },
+          "provider": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "search": {
+            "type": "string"
+          },
+          "page": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "per_page": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100
+          }
+        }
+      }
+    },
+    {
+      "name": "routerbase_get_model",
+      "description": "Fetch metadata for a specific RouterBase model id.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "model_id": {
+            "type": "string"
+          }
+        },
+        "required": ["model_id"]
+      }
+    },
+    {
+      "name": "routerbase_get_pricing",
+      "description": "Fetch RouterBase pricing for one model or all active models.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "model_id": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "routerbase_chat_completion",
+      "description": "Call RouterBase's OpenAI-compatible chat completions API through the configured RouterBase key.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "model": {
+            "type": "string"
+          },
+          "messages": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "role": {
+                  "type": "string",
+                  "enum": ["system", "user", "assistant", "tool"]
+                },
+                "content": {
+                  "type": "string"
+                }
+              },
+              "required": ["role", "content"]
+            }
+          },
+          "temperature": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 2
+          },
+          "max_tokens": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": ["model", "messages"]
+      }
+    }
+  ],
+  "resources": [
+    {
+      "uri": "routerbase://overview",
+      "name": "RouterBase overview",
+      "description": "A short description and canonical RouterBase backlink.",
+      "mimeType": "text/markdown"
+    }
+  ],
+  "prompts": []
+}

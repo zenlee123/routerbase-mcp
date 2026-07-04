@@ -1,0 +1,34 @@
+{
+  "name": "RouterBase MCP",
+  "slug": "routerbase-mcp",
+  "url": "https://github.com/zenlee123/routerbase-mcp",
+  "website": "https://routerbase.com",
+  "anchorText": "routerbase",
+  "anchorHtml": "<a href=\"https://routerbase.com\">routerbase</a>",
+  "shortDescription": "MCP server for RouterBase model discovery, pricing lookup, and OpenAI-compatible chat calls.",
+  "longDescription": "RouterBase MCP lets AI agents discover models, pricing, and chat completions through [routerbase](https://routerbase.com). It connects MCP clients to RouterBase's OpenAI-compatible API, model catalog, model details, and pricing endpoints.",
+  "category": "AI Models",
+  "tags": [
+    "mcp",
+    "routerbase",
+    "llm",
+    "openai-compatible",
+    "model-router",
+    "pricing",
+    "chat-completions"
+  ],
+  "install": {
+    "command": "npx",
+    "args": ["-y", "routerbase-mcp"],
+    "env": {
+      "ROUTERBASE_API_KEY": "sk-rb-your-key"
+    }
+  },
+  "tools": [
+    "routerbase_get_started",
+    "routerbase_list_models",
+    "routerbase_get_model",
+    "routerbase_get_pricing",
+    "routerbase_chat_completion"
+  ]
+}

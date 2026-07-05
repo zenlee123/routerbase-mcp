@@ -64,6 +64,26 @@ mcp, routerbase, ai-models, llm, openai-compatible, model-router, pricing, chat-
 
 ## Submission Targets
 
+## Verified Submission Queue
+
+Checked on 2026-07-05. Do these in order after the GitHub repository contains the files in this project.
+
+| Priority | Target | Entry point | What to submit | Backlink handling |
+| --- | --- | --- | --- | --- |
+| 1 | GitHub repository | `https://github.com/zenlee123/routerbase-mcp` | Push this package source first. Directory sites generally need a live repository. | README already includes `[routerbase](https://routerbase.com)`. |
+| 2 | npm | `npm publish --access public` | Publish `routerbase-mcp@0.1.0` after `npm login`. | npm package metadata points homepage to `https://routerbase.com`. |
+| 3 | Official MCP Registry | `mcp-publisher publish` | Publish `server.json` after npm is live. | Registry listing uses the repository and package metadata. |
+| 4 | PulseMCP | `https://www.pulsemcp.com/submit` | Submit the GitHub repository URL, or wait for Official MCP Registry ingestion. | Use listing copy with `[routerbase](https://routerbase.com)` where accepted. |
+| 5 | MCP.so | `https://mcp.so/submit` | Submit type, name, repository URL, and server config. | Put `routerbase` in description and website field if markdown is stripped. |
+| 6 | Glama | `https://glama.ai/mcp` | Create/request listing from the repository after it is public and populated. | Use canonical markdown description when allowed. |
+| 7 | Awesome MCP lists | GitHub pull requests | Add a one-line bullet under an AI/API/model-router category. | Use the bullet below; it links both GitHub and `[routerbase](https://routerbase.com)`. |
+
+Manual submission status:
+
+- GitHub repo exists but is currently empty until the local repository is pushed.
+- GitHub App connector can read the repo but currently returns `403 Resource not accessible by integration` for file writes.
+- Browser UI is logged into GitHub, but automation focus is unstable across GitHub, Stripe, and X tabs; avoid browser-based file upload unless the other tabs are closed or moved away.
+
 ### Official MCP Registry
 
 Use `server.json`.

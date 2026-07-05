@@ -25,6 +25,12 @@ Or run it without installing:
 npx routerbase-mcp
 ```
 
+Until the npm package is live, run it directly from GitHub:
+
+```bash
+npx -y github:zenlee123/routerbase-mcp
+```
+
 ## Configuration
 
 Create a RouterBase API key at [routerbase](https://routerbase.com) and set:

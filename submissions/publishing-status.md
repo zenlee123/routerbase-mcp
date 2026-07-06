@@ -16,6 +16,8 @@ Checked on 2026-07-07.
 - mcpservers.org: submitted with `support@routerbase.com`; free-plan submission returned ID `4261` and status `pending`.
 - Awesome MCP Servers by punkpeye: PR opened at https://github.com/punkpeye/awesome-mcp-servers/pull/9508 with `[routerbase](https://routerbase.com)` anchor text.
 - aiagenta2z MCP Marketplace schema collection: PR opened at https://github.com/aiagenta2z/mcp-marketplace/pull/3 with `[routerbase](https://routerbase.com)` anchor text.
+- TensorBlock Awesome MCP Servers / MCP Index: PR opened at https://github.com/TensorBlock/awesome-mcp-servers/pull/1090 with `[routerbase](https://routerbase.com)` anchor text.
+- YuzeHao2023 Awesome MCP Servers: PR opened at https://github.com/YuzeHao2023/Awesome-MCP-Servers/pull/351 with `[routerbase](https://routerbase.com)` anchor text.
 
 ## Prepared
 

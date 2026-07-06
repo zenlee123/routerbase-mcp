@@ -89,6 +89,8 @@ Submission status:
 - mcpservers.org free-plan submission is pending review as ID `4261`.
 - punkpeye Awesome MCP Servers PR is open at `https://github.com/punkpeye/awesome-mcp-servers/pull/9508`.
 - aiagenta2z MCP Marketplace schema PR is open at `https://github.com/aiagenta2z/mcp-marketplace/pull/3`.
+- TensorBlock Awesome MCP Servers / MCP Index PR is open at `https://github.com/TensorBlock/awesome-mcp-servers/pull/1090`.
+- YuzeHao2023 Awesome MCP Servers PR is open at `https://github.com/YuzeHao2023/Awesome-MCP-Servers/pull/351`.
 - appcypher Awesome MCP Servers fork branch is pushed at `https://github.com/zenlee123/appcypher-awesome-mcp-servers/tree/add-routerbase-mcp`, but upstream PR creation returned GitHub API 404/permission errors.
 - npm dry-run passed; final publish is blocked by npm 2FA OTP (`EOTP`) after logging in as `routerbase.com`.
 - Dockerfile is prepared in the source repo for a future Docker MCP Registry submission; Docker registry PR creation is blocked here because Docker CLI cannot connect to a running daemon.

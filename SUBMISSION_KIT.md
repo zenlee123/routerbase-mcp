@@ -66,7 +66,7 @@ mcp, routerbase, ai-models, llm, openai-compatible, model-router, pricing, chat-
 
 ## Verified Submission Queue
 
-Checked on 2026-07-05. The GitHub repository is live; remaining targets are gated by npm authentication, directory login, or third-party PR flow.
+Checked on 2026-07-07. The GitHub repository, MCP.so listing, and Glama listing are live; MCP Market and mcpservers.org have been submitted for review; remaining targets are gated by npm authentication, directory login, or third-party PR flow.
 
 | Priority | Target | Entry point | What to submit | Backlink handling |
 | --- | --- | --- | --- | --- |
@@ -74,13 +74,23 @@ Checked on 2026-07-05. The GitHub repository is live; remaining targets are gate
 | 2 | npm | `npm publish --access public` | Blocked: this machine is not logged into npm. `routerbase-mcp` is still unclaimed on npm. | npm package metadata points homepage to `https://routerbase.com`. |
 | 3 | Official MCP Registry | `mcp-publisher publish` | Blocked until npm is published; the official registry validates npm package ownership via `mcpName`. | Registry listing uses the repository and package metadata. |
 | 4 | PulseMCP | `https://www.pulsemcp.com/submit` | Blocked by Cloudflare for command-line access. It also ingests the Official MCP Registry. | Use listing copy with `[routerbase](https://routerbase.com)` where accepted. |
-| 5 | MCP.so | `https://mcp.so/submit` | Blocked by site auth. Direct API returned `no auth, please login`. | Put `routerbase` in description and website field if markdown is stripped. |
-| 6 | Glama | `https://glama.ai/mcp` | Wait for official registry or GitHub-list ingestion; no unauthenticated submit endpoint found. | Use canonical markdown description when allowed. |
-| 7 | Awesome MCP lists | GitHub pull requests | PR patch prepared in `submissions/awesome-mcp-servers-routerbase.patch`. | The patch uses `[routerbase](https://routerbase.com)`. |
+| 5 | MCP.so | `https://mcp.so/server/routerbase-mcp/zenlee123` | Published. The public page is live; Visit Server cache may lag the saved website URL update. | Overview includes `[routerbase](https://routerbase.com)`. |
+| 6 | Glama | `https://glama.ai/mcp/servers/zenlee123/routerbase-mcp` | Published from the GitHub repository. | Public page shows `routerbase` anchors pointing to `https://routerbase.com/`. |
+| 7 | MCP Market | `https://mcpmarket.com/submit` | Submitted to the free queue with `support@routerbase.com`; site reported an estimated 4-6 week wait. | Submitted GitHub repository; README includes `[routerbase](https://routerbase.com)`. |
+| 8 | mcpservers.org | `https://mcpservers.org/submit` | Submitted free-plan entry with `support@routerbase.com`; returned ID `4261` and status `pending`. | Submitted GitHub repository; README includes `[routerbase](https://routerbase.com)`. Premium dofollow option was not selected. |
+| 9 | Awesome MCP lists | GitHub pull requests | PR patch prepared in `submissions/awesome-mcp-servers-routerbase.patch`. | The patch uses `[routerbase](https://routerbase.com)`. |
 
 Submission status:
 
 - GitHub repo is published at `https://github.com/zenlee123/routerbase-mcp`.
+- MCP.so listing is published at `https://mcp.so/server/routerbase-mcp/zenlee123`.
+- Glama listing is published at `https://glama.ai/mcp/servers/zenlee123/routerbase-mcp`.
+- MCP Market free queue submission is pending review.
+- mcpservers.org free-plan submission is pending review as ID `4261`.
+- punkpeye Awesome MCP Servers PR is open at `https://github.com/punkpeye/awesome-mcp-servers/pull/9508`.
+- aiagenta2z MCP Marketplace schema PR is open at `https://github.com/aiagenta2z/mcp-marketplace/pull/3`.
+- appcypher Awesome MCP Servers fork branch is pushed at `https://github.com/zenlee123/appcypher-awesome-mcp-servers/tree/add-routerbase-mcp`, but upstream PR creation returned GitHub API 404/permission errors.
+- npm dry-run passed; final publish is blocked by npm 2FA OTP (`EOTP`) after logging in as `routerbase.com`.
 - GitHub direct push works from this environment.
 - GitHub App connector can read the repo but returned `403 Resource not accessible by integration` for file writes.
 - Browser-based submission was avoided because several target sites require login/OAuth and can create public submissions under the user's identity.

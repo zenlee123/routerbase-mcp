@@ -4,7 +4,7 @@
   "description": "MCP server for RouterBase model discovery, pricing lookup, and OpenAI-compatible chat calls.",
   "type": "module",
   "bin": {
-    "routerbase-mcp": "./dist/index.js"
+    "routerbase-mcp": "dist/index.js"
   },
   "files": [
     "dist",
@@ -30,7 +30,7 @@
   "homepage": "https://routerbase.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zenlee123/routerbase-mcp.git"
+    "url": "git+https://github.com/zenlee123/routerbase-mcp.git"
   },
   "bugs": {
     "url": "https://github.com/zenlee123/routerbase-mcp/issues"

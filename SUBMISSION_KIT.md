@@ -91,6 +91,7 @@ Submission status:
 - aiagenta2z MCP Marketplace schema PR is open at `https://github.com/aiagenta2z/mcp-marketplace/pull/3`.
 - appcypher Awesome MCP Servers fork branch is pushed at `https://github.com/zenlee123/appcypher-awesome-mcp-servers/tree/add-routerbase-mcp`, but upstream PR creation returned GitHub API 404/permission errors.
 - npm dry-run passed; final publish is blocked by npm 2FA OTP (`EOTP`) after logging in as `routerbase.com`.
+- Dockerfile is prepared in the source repo for a future Docker MCP Registry submission; Docker registry PR creation is blocked here because Docker CLI cannot connect to a running daemon.
 - GitHub direct push works from this environment.
 - GitHub App connector can read the repo but returned `403 Resource not accessible by integration` for file writes.
 - Browser-based submission was avoided because several target sites require login/OAuth and can create public submissions under the user's identity.

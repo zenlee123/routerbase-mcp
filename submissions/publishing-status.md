@@ -23,6 +23,7 @@ Checked on 2026-07-07.
 - Awesome MCP Servers PR copy: `submissions/awesome-mcp-servers-pr.md`
 - appcypher Awesome MCP Servers fork branch: `https://github.com/zenlee123/appcypher-awesome-mcp-servers/tree/add-routerbase-mcp`; GitHub PR API returned 404/permission errors for this upstream.
 - Cline Marketplace: 400x400 logo prepared at `metadata/routerbase-logo-400.png`; submission still requires verified Cline install testing.
+- Docker MCP Registry: source repo Dockerfile prepared; PR requires Docker daemon for `task build` / validation, but this machine has Docker CLI without a running daemon or Docker Desktop.
 
 ## Blocked
 

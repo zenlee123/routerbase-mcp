@@ -66,7 +66,7 @@ mcp, routerbase, ai-models, llm, openai-compatible, model-router, pricing, chat-
 
 ## Verified Submission Queue
 
-Checked on 2026-07-07. The GitHub repository, MCP.so listing, and Glama listing are live; MCP Market and mcpservers.org have been submitted for review; remaining targets are gated by npm authentication, directory login, or third-party PR flow.
+Checked on 2026-07-29. The GitHub repository, MCP.so listing, and Glama listing are live; MCP Market, mcpservers.org, and AwesomeMCP.io have been submitted for review; several awesome-list PRs are open; remaining registry-style targets are gated by npm authentication, directory login, or third-party PR flow.
 
 | Priority | Target | Entry point | What to submit | Backlink handling |
 | --- | --- | --- | --- | --- |
@@ -78,7 +78,8 @@ Checked on 2026-07-07. The GitHub repository, MCP.so listing, and Glama listing 
 | 6 | Glama | `https://glama.ai/mcp/servers/zenlee123/routerbase-mcp` | Published from the GitHub repository. | Public page shows `routerbase` anchors pointing to `https://routerbase.com/`. |
 | 7 | MCP Market | `https://mcpmarket.com/submit` | Submitted to the free queue with `support@routerbase.com`; site reported an estimated 4-6 week wait. | Submitted GitHub repository; README includes `[routerbase](https://routerbase.com)`. |
 | 8 | mcpservers.org | `https://mcpservers.org/submit` | Submitted free-plan entry with `support@routerbase.com`; returned ID `4261` and status `pending`. | Submitted GitHub repository; README includes `[routerbase](https://routerbase.com)`. Premium dofollow option was not selected. |
-| 9 | Awesome MCP lists | GitHub pull requests | PR patch prepared in `submissions/awesome-mcp-servers-routerbase.patch`. | The patch uses `[routerbase](https://routerbase.com)`. |
+| 9 | AwesomeMCP.io | `https://awesomemcp.io/submit/` | Submitted public form with `support@routerbase.com`; site returned the thank-you confirmation. | Additional information included `[routerbase](https://routerbase.com)`. |
+| 10 | Awesome MCP lists | GitHub pull requests | Multiple PRs opened; see status list below. | PR entries use `[routerbase](https://routerbase.com)`. |
 
 Submission status:
 
@@ -91,9 +92,17 @@ Submission status:
 - aiagenta2z MCP Marketplace schema PR is open at `https://github.com/aiagenta2z/mcp-marketplace/pull/3`.
 - TensorBlock Awesome MCP Servers / MCP Index PR is open at `https://github.com/TensorBlock/awesome-mcp-servers/pull/1090`.
 - YuzeHao2023 Awesome MCP Servers PR is open at `https://github.com/YuzeHao2023/Awesome-MCP-Servers/pull/351`.
+- mctrinh Awesome MCP Servers PR is open at `https://github.com/mctrinh/awesome-mcp-servers/pull/87`.
+- habitoai Awesome MCP Servers PR is open at `https://github.com/habitoai/awesome-mcp-servers/pull/115`.
+- DhanushNehru Awesome MCP Servers PR is open at `https://github.com/DhanushNehru/awesome-mcp-servers/pull/51`.
+- Sagargupta16 Awesome MCP Servers PR is open at `https://github.com/Sagargupta16/awesome-mcp-servers/pull/65`.
+- habitoai Awesome MCP Servers Directory PR is open at `https://github.com/habitoai/Awesome-MCP-Servers-directory/pull/32`.
+- AwesomeMCP.io public form submission is pending review; the page returned the thank-you confirmation.
 - appcypher Awesome MCP Servers fork branch is pushed at `https://github.com/zenlee123/appcypher-awesome-mcp-servers/tree/add-routerbase-mcp`, but upstream PR creation returned GitHub API 404/permission errors.
+- serpvault Awesome MCP Servers fork branch is pushed at `https://github.com/zenlee123/serpvault-awesome-mcp-servers/tree/add-routerbase-mcp`, but upstream is archived/read-only and rejected PR creation.
 - npm dry-run passed; final publish is blocked by npm 2FA OTP (`EOTP`) after logging in as `routerbase.com`.
 - Dockerfile is prepared in the source repo for a future Docker MCP Registry submission; Docker registry PR creation is blocked here because Docker CLI cannot connect to a running daemon.
+- ToolSDK MCP Registry, MCP Find, and mcpdir should be retried after npm or official registry publication because they require or ingest published package/registry metadata.
 - GitHub direct push works from this environment.
 - GitHub App connector can read the repo but returned `403 Resource not accessible by integration` for file writes.
 - Browser-based submission was avoided because several target sites require login/OAuth and can create public submissions under the user's identity.

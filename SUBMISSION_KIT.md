@@ -98,6 +98,7 @@ Submission status:
 - Sagargupta16 Awesome MCP Servers PR is open at `https://github.com/Sagargupta16/awesome-mcp-servers/pull/65`.
 - habitoai Awesome MCP Servers Directory PR is open at `https://github.com/habitoai/Awesome-MCP-Servers-directory/pull/32`.
 - AwesomeMCP.io public form submission is pending review; the page returned the thank-you confirmation.
+- Redly MCP Marketplace issue is open at `https://github.com/airedly/redly-mcp-marketplace/issues/2`.
 - appcypher Awesome MCP Servers fork branch is pushed at `https://github.com/zenlee123/appcypher-awesome-mcp-servers/tree/add-routerbase-mcp`, but upstream PR creation returned GitHub API 404/permission errors.
 - serpvault Awesome MCP Servers fork branch is pushed at `https://github.com/zenlee123/serpvault-awesome-mcp-servers/tree/add-routerbase-mcp`, but upstream is archived/read-only and rejected PR creation.
 - npm dry-run passed; final publish is blocked by npm 2FA OTP (`EOTP`) after logging in as `routerbase.com`.

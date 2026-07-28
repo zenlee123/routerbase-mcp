@@ -24,11 +24,13 @@ Checked on 2026-07-29.
 - Sagargupta16 Awesome MCP Servers: PR opened at https://github.com/Sagargupta16/awesome-mcp-servers/pull/65 with `[routerbase](https://routerbase.com)` anchor text.
 - habitoai Awesome MCP Servers Directory: PR opened at https://github.com/habitoai/Awesome-MCP-Servers-directory/pull/32 with `[routerbase](https://routerbase.com)` anchor text.
 - AwesomeMCP.io: submitted through the public form with `support@routerbase.com`; site returned the thank-you confirmation and says review normally takes 2-3 business days.
+- Redly MCP Marketplace: issue opened at https://github.com/airedly/redly-mcp-marketplace/issues/2 with `[routerbase](https://routerbase.com)` anchor text.
 
 ## Prepared
 
 - Awesome MCP Servers PR patch: `submissions/awesome-mcp-servers-routerbase.patch`
 - Awesome MCP Servers PR copy: `submissions/awesome-mcp-servers-pr.md`
+- Redly MCP Marketplace issue copy: `submissions/redly-marketplace-issue.md`
 - appcypher Awesome MCP Servers fork branch: `https://github.com/zenlee123/appcypher-awesome-mcp-servers/tree/add-routerbase-mcp`; GitHub PR API returned 404/permission errors for this upstream.
 - serpvault Awesome MCP Servers fork branch: `https://github.com/zenlee123/serpvault-awesome-mcp-servers/tree/add-routerbase-mcp`; upstream repository is archived/read-only, so GitHub rejected PR creation.
 - Cline Marketplace: 400x400 logo prepared at `metadata/routerbase-logo-400.png`; submission still requires verified Cline install testing.
